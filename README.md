@@ -1,6 +1,10 @@
-# ml-neuroimaging-meta-analysis-challenges
+# Using, misusing, and improving online machine learning-based meta-analysis of neuroimaging published data: A perspective on NeuroQuery
+This repository contains code for replicating analysis related to the use of the NeuroQuery meta-analysis tool
 
-A short description of the project.
+---
+AI based meta analysis and literature review of large numbers of papers can help support research and manual review. While recent natural language models such as ChatGPT4 are extremely powerful at processing documents, their complexity also hurts the transparency of how their responses are generated. 
+
+The need for this transparency is demonstrated by Neuroquery, which uses older more explainable methods for identifying regions of potential activity in the brain based on user-defined text queries (e.g. "Distance + Color"). Neuroquery results are often dominated by terms that have strong activations, such as those relating to the visual cortex, even if the user did not intend those associations to be present (Neuroquery associations are based on words that often appear together; something Large Language Models are also susceptible too).
 
 ## Project Organization
 
@@ -53,6 +57,25 @@ A short description of the project.
     └── visualization  <- Scripts to create exploratory and results oriented visualizations
         └── visualize.py
 ```
+
+## Running code 
+
+### Installing requirements
+```
+make requirements
+```
+or 
+```
+pip install -r requirements.txt
+```
+
+### Downloading data
+Data used by neuroquery and they're published models is found here https://github.com/neuroquery/neuroquery_data
+
+```
+git clone https://github.com/neuroquery/neuroquery_data data/neuroquery_data
+```
+- At the time of writing this, the most recent commit is "4580f86" 
 
 --------
 

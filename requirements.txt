@@ -8,4 +8,9 @@ python-dotenv
 setuptools
 typer
 wheel
+nilearn
+nibabel
+neuroquery
+numpy
+matplotlib
 -e .
